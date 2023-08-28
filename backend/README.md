@@ -2,7 +2,11 @@
 
 
 
-> save images and videos  in a cloudinary service 
+> save images and videos  in a cloudinary service, you need have the cloudinary crendentials and save them in a env file
+> .env file in root  backend folder need these credentials (You receive the credentials when you log in to the cloudinary website)
+> CLOUD_NAME='cloud_name'
+CLOUD_API_KEY='cloud_api_key'
+CLOUD_API_SECRET='cloud_api_secret' 
 
 ## Docs
 
