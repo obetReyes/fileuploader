@@ -25,7 +25,7 @@ describe('App init state', () => {
   })
 
   it("upload a file", async() => {
-    const user = userEvent.setup()
+    userEvent.setup()
     
     const file = new File(['test'], 'test.png', {type: 'image/png'})
     const app = renderWithClient(<App />)
@@ -40,7 +40,7 @@ describe('App init state', () => {
 
   
   it("upload multiple files, also check if the file is added to the list", async () => {
-    const user = userEvent.setup();
+     userEvent.setup();
     const app = renderWithClient(<App />);
     const input = await app.findByLabelText(/elegir imagen o video/i) as HTMLInputElement; // Explicitly cast to HTMLInputElement
   
@@ -54,7 +54,7 @@ describe('App init state', () => {
   });
  
     it("check if file in the list can be renamed", async() => {
-      const user = userEvent.setup()
+       userEvent.setup()
     
       const file = new File(['test'], 'test.png', {type: 'image/png'})
       const app = renderWithClient(<App />)
@@ -76,7 +76,7 @@ describe('App init state', () => {
     })
 
     it("check if the file rename can be cancelled and what happens to the renombrar archivo button if the ", async() => {
-      const user = userEvent.setup()
+     userEvent.setup()
     
       const file = new File(['test'], 'test.png', {type: 'image/png'})
       const app = renderWithClient(<App />)
@@ -99,7 +99,7 @@ describe('App init state', () => {
 
   
     it("check if file in the list can be removed", async() => {
-      const user = userEvent.setup()
+    userEvent.setup()
     
       const file = new File(['test'], 'test.png', {type: 'image/png'})
       const app = renderWithClient(<App />)
@@ -118,7 +118,7 @@ describe('App init state', () => {
 
  
     it("if there is a file or there are files in the list and they are submited, a div showing  a progress  bar and a text should be in the dom also an error message because the server is not running and the files should not be removed from the dom", async() => {
-      const user = userEvent.setup()
+       userEvent.setup()
     
       const file = new File(['test'], 'test.png', {type: 'image/png'})
       const app = renderWithClient(<App />)
@@ -147,7 +147,7 @@ describe('App init state', () => {
     it("if the files are sucessfully upload the list should not appear in the dom also and there should not be an error alert, just a message that where they notify the user that the files were uploaded ", async() => {
       server.listen()
 
-      const user = userEvent.setup()
+     userEvent.setup()
     
       const file = new File(['test'], 'test.png', {type: 'image/png'})
       const app = renderWithClient(<App />)

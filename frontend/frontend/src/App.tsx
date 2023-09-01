@@ -64,7 +64,7 @@ function App() {
   }
 
 
-  const { mutate, isLoading, isSuccess, reset, isError, error } = useMutation<string, AxiosError, any[]>(apiCall);
+  const { mutate, isLoading,  reset, isError, error } = useMutation<string, AxiosError, any[]>(apiCall);
 
   async function addFilesToTheList(event: React.ChangeEvent<HTMLInputElement>) {
     const selectedFile = event.target?.files?.[0]

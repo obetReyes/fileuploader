@@ -22,10 +22,10 @@ export const FileComponent = ({setFilesToUpload, index, file, filesToUpload, set
   function removeFileFromUpload(idx: number) {
 
 
-    const removeFileFromfiles = filesToUpload.files.filter((file, index) => {
+    const removeFileFromfiles = filesToUpload.files.filter((_file, index) => {
      return idx !== index
     })
-    const removeImageFromImages  = filesToUpload.images.filter((file, index) => {
+    const removeImageFromImages  = filesToUpload.images.filter((_file, index) => {
       return idx !== index
     })
     setFilesToUpload({files:removeFileFromfiles, images:removeImageFromImages})
