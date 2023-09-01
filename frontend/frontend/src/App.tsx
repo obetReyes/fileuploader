@@ -51,7 +51,7 @@ function App() {
     files.forEach((file, index) => {
       formData.append(`files[${index}]`, file); // Usa la misma clave 'files' con índice
     });
-    const response = await axios.post('http://localhost:3000/files', formData, {
+    const response = await axios.post('https://fileuploader-7hj7.onrender.com', formData, {
       onUploadProgress: function (progressEvent) {
 
         let percentCompleted = Math.round(
