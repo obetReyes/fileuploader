@@ -22,6 +22,6 @@
 
 ************************************************************* 
 ## APP TREE (structure)
-- see fileUploader_tree image (svg)
+- see fileUploader_tree image (svg) *in the frontend folder*
 
 
