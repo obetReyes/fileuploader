@@ -12,7 +12,7 @@ async function bootstrap() {
 
   app.enableCors({
     methods:["POST"],
-    origin:process.env.HOST || "http://localhost:5173"
+    origin:process.env.HOST 
   });
 app.useLogger(app.get(Logger)
 );
